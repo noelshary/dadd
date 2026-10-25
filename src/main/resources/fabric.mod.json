@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "style-studio",
+  "version": "${version}",
+  "name": "Style Studio",
+  "description": "Chat-, HUD- und Menü-Styles für Minecraft – komplett konfigurierbar über ModMenu.",
+  "authors": [
+    "Style Studio"
+  ],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.stylestudio.StyleStudioClient"
+    ],
+    "modmenu": [
+      "de.stylestudio.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "style-studio.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
